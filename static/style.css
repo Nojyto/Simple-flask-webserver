@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+:root {
+	--fullwhite: #FFFFFF;
+	--white:     #F1F1F1;
+	--darkgrey:  #292929;
+	--black:     #1B1B1B;
+	--fullblack: #000000;
+	--red:       #FF2800;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--darkgrey);
+    box-shadow: inset 0 0 2px var(--fullblack);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--white);
+    border-radius: 6px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+html {
+    -webkit-touch-callout: none;
+	  -webkit-user-select: none;
+	   -khtml-user-select: none;
+	     -moz-user-select: none;
+		  -ms-user-select: none;
+		      user-select: none;
+    background-color: var(--darkgrey);
+    scroll-behavior: smooth;
+}
+
+main {
+	margin-top: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: var(--white);
+}
+
+h1 {
+	font-size: 64px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+.code {
+	color: var(--red);
+}
+
+img {
+	margin: 16px;
+	border-radius: 15px;
+	box-shadow: 10px 10px 5px var(--fullblack);
+}
