@@ -1,10 +1,5 @@
 from flask import Flask, render_template
-
-cfg = {
-    "name": "Kodo gavimas",
-    "code": "1123123",
-    "img": "https://picsum.photos/300/600"
-}
+import json
 
 
 app = Flask(__name__)
@@ -12,7 +7,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template("index.html", data=cfg)
+    return render_template("index.html", data=readJson("config.json"))
+
+
+def readJson(path):
+    with open(path) as f:
+        return json.load(f)
 
 
 if __name__ == "__main__":
